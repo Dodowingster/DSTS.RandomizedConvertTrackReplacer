@@ -52,7 +52,7 @@ For example: If "Butterfly" is playing during Standard Digimon Conversion and yo
 2.  **Install the Mod:** **Drag and drop** the **zipped file directly** onto the main **Reloaded II application** window
 3.  **Enable and Prioritize:** In the **Digimon Story Time Stranger mod list**, click the status indicator (**minus icon -**) to **enable** the mod (it will change to a **plus icon +**). Then, **drag the mod** to ensure its priority is correctly set, matching the order seen in the installation GIF.
 4.  **Launch the Game:** Click **Launch Application** in Reloaded II.
-5.  **Enjoy:** Digivolve, start vibin', Rinse and repeat\!
+5.  **Enjoy:** Convert, start vibin', Rinse and repeat\!
 
 -----
 
