@@ -1,0 +1,30 @@
+{
+  "ModId": "DSTS.RandomizedConvertTrackVocallessAnime",
+  "ModName": "Randomized Convert Tracks Replacer",
+  "ModAuthor": "Dodowingster",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Replaces and Randomizes the Digimon Convert track into Anime Inspired Tracks such as Butterfly, Target and Card Slash",
+  "ModDll": "",
+  "ModIcon": "How do I convert to Vibes.png",
+  "ModR2RManagedDll32": "",
+  "ModR2RManagedDll64": "",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "DSTS.RandomizedConvertTrackVocallessAnime.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "DSTS.ModLoader",
+    "DSTS.RyoFramework",
+    "Ryo.Reloaded"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "digimon story time stranger.exe"
+  ],
+  "ProjectUrl": ""
+}
