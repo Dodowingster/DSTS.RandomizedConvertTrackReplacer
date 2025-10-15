@@ -2,17 +2,17 @@
   "ModId": "DSTS.RandomizedConvertTrackVocallessAnime",
   "ModName": "Randomized Convert Tracks Replacer",
   "ModAuthor": "Dodowingster",
-  "ModVersion": "1.0.0",
+  "ModVersion": "1.1",
   "ModDescription": "Replaces and Randomizes the Digimon Convert track into Anime Inspired Tracks such as Butterfly, Target and Card Slash",
-  "ModDll": "",
+  "ModDll": "RemixToolkit.HostMod.dll",
   "ModIcon": "How do I convert to Vibes.png",
   "ModR2RManagedDll32": "",
   "ModR2RManagedDll64": "",
   "ModNativeDll32": "",
   "ModNativeDll64": "",
   "Tags": [],
-  "CanUnload": null,
-  "HasExports": null,
+  "CanUnload": false,
+  "HasExports": false,
   "IsLibrary": false,
   "ReleaseMetadataFileName": "DSTS.RandomizedConvertTrackVocallessAnime.ReleaseMetadata.json",
   "PluginData": {
@@ -35,6 +35,15 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "DSTS.RyoFramework.ReleaseMetadata.json"
+        },
+        "RemixToolkit.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "RemixToolkit",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "RemixToolkit.Reloaded.ReleaseMetadata.json"
         },
         "Ryo.Reloaded": {
           "Config": {
@@ -92,6 +101,7 @@
   "ModDependencies": [
     "DSTS.ModLoader",
     "DSTS.RyoFramework",
+    "RemixToolkit.Reloaded",
     "Ryo.Reloaded"
   ],
   "OptionalDependencies": [],

@@ -1,0 +1,63 @@
+constants:
+    RYO_API: Ryo.Interfaces.IRyoApi
+    FS_API: RemixToolkit.Interfaces.IFileSystem
+
+settings:
+    - id: longConvert_enabled
+      type: toggle
+      default: true
+      name: Enable Digimon Long Convert Track Replacement
+      category: Digimon Long Convert
+      description: Enable or disable the replacement of the long convert track with a random track from the long convert track list.
+
+    - id: long_bgm_volume
+      type: number
+      default: 2
+      name: Convert Long BGM Volume
+      category: Digimon Long Convert
+      description: Volume for Unskipped Convert Track  (Range from 1 to 9, where 9 is full volume).
+
+    - id: shortConvert_enabled
+      type: toggle
+      default: true
+      name: Enable Digimon Short Convert Track Replacement
+      category: Digimon Short Convert
+      description: Enable or disable the replacement of the short convert track with a random track from the short convert track list.
+
+      settings:
+    - id: short_bgm_volume
+      type: number
+      default: 2
+      name: Convert Short BGM Volume
+      category: Digimon Short Convert
+      description: Volume for Skipped Convert Track  (Range from 1 to 9, where 9 is full volume).
+
+actions:
+    - using: '{FS_API}'
+      if: 
+      run: WriteFile
+      with:
+        - '{ModDir}/long/se/se050.acb/500010.cue/config.yaml'
+        - |
+          volume: 0.{long_bgm_volume}
+
+    - using: '{FS_API}'
+      run: WriteFile
+      with:
+        - '{ModDir}/short/se/se050.acb/500011.cue/config.yaml'
+        - |
+          volume: 0.{short_bgm_volume}
+
+    - using: '{RYO_API}'
+      if: longConvert_enabled
+      run: AddAudioPath
+      with:
+        - '{ModDir}/long/'
+        - null
+
+    - using: '{RYO_API}'
+      if: shortConvert_enabled
+      run: AddAudioPath
+      with:
+        - '{ModDir}/short/'
+        - null
